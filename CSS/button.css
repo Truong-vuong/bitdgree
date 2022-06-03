@@ -1,0 +1,214 @@
+.btn-view {
+    width: 300px;
+    height: 60px;
+    background: linear-gradient(to left top, #1f9c70 50%, #41c967 50%);
+    border-style: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+}
+
+.btn-view span {
+    position: absolute;
+    display: block;
+}
+
+.btn-view span:nth-child(1) {
+    height: 3px;
+    width: 200px;
+    top: 0px;
+    left: -200px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1 {
+    0% {
+        left: -200px
+    }
+    100% {
+        left: 200px;
+    }
+}
+
+.btn-view span:nth-child(2) {
+    height: 70px;
+    width: 3px;
+    top: -70px;
+    right: 0px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes span2 {
+    0% {
+        top: -70px;
+    }
+    100% {
+        top: 70px;
+    }
+}
+
+.btn-view span:nth-child(3) {
+    height: 3px;
+    width: 200px;
+    right: -200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes span3 {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 200px;
+    }
+}
+
+.btn-view span:nth-child(4) {
+    height: 70px;
+    width: 3px;
+    bottom: -70px;
+    left: 0px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+
+@keyframes span4 {
+    0% {
+        bottom: -70px;
+    }
+    100% {
+        bottom: 70px;
+    }
+}
+
+.btn-view :hover {
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .4);
+}
+
+.btn-view :hover span {
+    animation-play-state: paused;
+}
+
+.btn-blue {
+    z-index: 1;
+    position: relative;
+    font-size: 1rem;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: var(--btn-blue-bg);
+    border-radius: 4px;
+}
+
+.btn-blue::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0d0a3e;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+    border-radius: 4px;
+}
+
+.btn-blue:hover {
+    cursor: pointer;
+}
+
+.btn-blue:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+}
+
+.btn-pink {
+    z-index: 1;
+    position: relative;
+    font-size: 1.2rem;
+    font-family: inherit;
+    color: white;
+    padding: .4rem 1.4rem;
+    outline: none;
+    border: none;
+    background-color: var(--btn-pink-bg);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+
+.btn-pink::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 1.2em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #bd32e8;
+    transform-origin: center;
+    transform: translate3d(50%, -20%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+}
+
+.btn-pink:hover {
+    cursor: pointer;
+    color: #161616;
+}
+
+.btn-pink:hover::before {
+    transform: translate3d(50%, -20%, 0) scale3d(15, 15, 20);
+}
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .4s ease;
+    color: #fff;
+}
+
+.btn-green {
+    background-color: var(--btn-green-bg);
+}
+
+.btn-green:hover {
+    color: var(--btn-green-bg);
+    background-color: transparent;
+    border: .1px solid var(--btn-green-bg);
+}

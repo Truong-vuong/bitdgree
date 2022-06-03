@@ -1,0 +1,330 @@
+/* -----Tablet----- */
+
+@media (min-width: 768px) {
+    .container-section {
+        padding: 1rem 2rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    /* -----sourses----- */
+    .courses__box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* -----sourses----- */
+    /* -----learn--------*/
+    .learn__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .learn__content__button button {
+        width: 60%;
+    }
+    /* -----learn--------*/
+    /* -----discord---- */
+    .discord h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    .discord button {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+    /* -----discord---- */
+    /* -----video---- */
+    .video__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* -----video---- */
+    /* -----video---- */
+    .news__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* -----video---- */
+    .evaluted__ratecard {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        overflow-x: scroll;
+    }
+    .ratecard {
+        width: 100%;
+    }
+    /* -----defi---- */
+    .defi__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+    /* -----defi---- */
+    /* -----nft--- */
+    .nft__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr)
+    }
+    /* -----nft--- */
+}
+
+
+/* -----End-Tablet----- */
+
+
+/* -----Desktop----- */
+
+@media only screen and (min-width: 1024px) {
+    .container-section {
+        padding: 1rem 4rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    /* -----header----- */
+    .header {
+        width: 100%;
+        height: 60px;
+        background-color: transparent;
+        padding: 0 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .container {
+        width: 100%;
+    }
+    .left {
+        gap: .4rem;
+        width: 10%;
+    }
+    .header__iconbar {
+        display: none;
+    }
+    .header__logo {
+        width: 9rem;
+    }
+    .header__logo img {
+        width: 100%;
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        position: unset;
+        height: 100%;
+        width: 87%;
+        transition: left 0.5s;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0 1rem;
+        width: 100%;
+    }
+    .nav__header {
+        display: none;
+    }
+    .nav__menu {
+        min-width: 200px;
+    }
+    .nav__menu__main {
+        width: 100%;
+        background-color: rgba(89, 87, 87, 0.677);
+        color: #fff;
+    }
+    .nav__menu__list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        color: black;
+    }
+    .nav__search {
+        width: 100%;
+        max-width: 360px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 2rem;
+        padding: .2rem 1rem;
+    }
+    .nav__search input {
+        color: #fff;
+    }
+    .nav__search::placeholder {
+        color: #fff;
+    }
+    .nav__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 4px;
+        color: #fff;
+        font-weight: 600;
+    }
+    .nav__link__item:hover {
+        color: rgb(235, 51, 116);
+    }
+    button.nav__connect {
+        max-width: 140px;
+    }
+    .right {
+        gap: .2rem;
+        width: 3%;
+    }
+    .header__cart i:last-child {
+        display: none;
+    }
+    /* -----header----- */
+    /* -----banner----- */
+    .banner {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9)30%, rgba(0, 0, 0, 0.4)), url('https://www.bitdegree.org/assets/homepage/crypto-hub-v2-banner.png');
+    }
+    .banner__box {
+        padding: 2rem 6rem;
+    }
+    .banner__box h1 {
+        font-size: 4rem;
+        padding: 8px 0;
+    }
+    .banner__box p {
+        font-size: 1.5rem;
+        font-weight: 200;
+        padding: 8px 0;
+    }
+    .banner__box button {
+        color: #fff;
+        font-size: 1.4rem;
+        padding: 1rem 3rem;
+        border-radius: 12px;
+        margin-top: 2rem;
+    }
+    .banner__box button {
+        color: #fff;
+        font-size: 1.4rem;
+        padding: 1rem 3rem;
+        border-radius: 12px;
+        margin-top: 2rem;
+    }
+    /* -----banner----- */
+    /* -----sourses----- */
+    .courses__link {
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .courses__box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /* -----sourses----- */
+    /* -----learn--------*/
+    .learn__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .learn__content__button {
+        text-align: left;
+        margin-left: 3rem;
+    }
+    /* -----learn--------*/
+    /* -----video---- */
+    .video__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* -----video---- */
+    /* -----video---- */
+    .news__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /* -----video---- */
+    /* -----exchange---- */
+    .exchange .container-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .exchange__image {
+        display: block;
+    }
+    /* -----exchange---- */
+    /* -----evaluted--- */
+    .evaluted {
+        padding: 8rem;
+    }
+    .evaluted__maincard {
+        text-align: left;
+    }
+    .maincard {
+        display: grid;
+        grid-template-columns: 25% auto 25%;
+        padding: 1rem;
+    }
+    .maincard__content__info {
+        display: flex;
+        font-size: .7rem;
+    }
+    .evaluted__ratecard {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow: hidden;
+    }
+    .ratecard {
+        width: 100%;
+    }
+    /* -----evaluted----- */
+    /* -----defi---- */
+    .defi__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr)
+    }
+    /* -----defi---- */
+    /* -----nft--- */
+    .nft__container-section {
+        margin: 0 auto;
+    }
+    .nft__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr)
+    }
+    .nft__item {
+        width: 100%;
+    }
+    /* -----nft--- */
+    /* -----footer--- */
+    .footer {
+        padding: 1rem 4rem;
+    }
+    .footer__body {
+        display: grid;
+        grid-template-columns: auto 30%;
+    }
+    .footer__info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+    .language {
+        margin-top: unset;
+        margin-bottom: 1rem;
+    }
+    .footer__copy {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .copy__logo {
+        width: 8rem;
+    }
+    .copy__info {
+        font-size: .8rem;
+    }
+    /* -----footer--- */
+}
+
+
+/* -----End-Desktop----- */
